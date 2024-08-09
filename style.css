@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+nav {
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    z-index: 999999;
+    padding: 0 10px;
+    background-color: #3c9df8;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav input {
+    width: 200px;
+    height: 34px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 0 7px;
+}
+
+nav div {
+    padding: 10px;
+}
+
+nav h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 34px;
+}
+
+button[data-bs-target="#exampleModal"] {
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    background-color: #3c9df8;
+    border: none;
+    border-radius: 50% !important;
+    color: white !important;
+    z-index: 999999999;
+    font-size: 40px !important;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+nav button:hover {
+    transform: rotate(200deg);
+    transition: all 0.2s linear;
+}
+
+
+.bottomDiv {
+    width: 100%;
+    height: 90vh;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.card {
+    height: 200px !important;
+    width: 280px !important;
+}
+
+.cardBody {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftSide {
+    width: 80%;
+}
+
+.rightSide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.rightSide i {
+    width: 24px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+#createBtn,
+#update Btn {
+    background-color: #3c9df8 !important;
+}
+
+label[for="progress"] {
+    font-weight: bold;
+    color: #333;
+}
+
+label[for="noteTitle"] {
+    font-weight: bold;
+    color: #333;
+}
+
+label[for="noteText"] {
+    font-weight: bold;
+    color: #333;
+}
+
+
+.icons-container {
+    display: flex;
+    gap: 3px;
+}
+
+.icons-container :nth-child(1) {
+
+    background-color: rgb(10, 176, 226);
+}
+
+.icons-container :nth-child(2) {
+
+    background-color: rgb(10, 226, 10);
+}
+
+.icons-container :nth-child(3) {
+    background-color: rgb(230, 37, 37);
+}
+
+
+@media (max-width:630px) {
+    .bottomDiv {
+        justify-content: center;
+    }
+
+    .card {
+        width: 80% !important;
+    }
+
+    nav button {
+        right: 10px;
+    }
+}
+
+
+@media (max-width:430px) {
+    nav h1 {
+        font-size: 24px;
+    }
+}
